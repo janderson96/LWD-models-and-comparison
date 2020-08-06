@@ -76,4 +76,29 @@ vapour_pressure
         e:   Vapour pressure if given input is T_d (kPa)
     '''
     
+RES_neat.py
+
+RES
+
+    '''
+    RES uses LE function to calculate Latent Heat Energy (LE), iterating over 
+    each time step.
+    
+    Inputs:
+        time:   Time series of the data
+        U_x:    Zonal wind speed (m/s)
+        U_y:    Meridional wind speed (m/s)
+        R_n:    Net radiation (Wm^-2)
+        T:      Temperature (C)
+        T_d:    Dew point temperature (C)
+        precip: Precipitation (m)
+        tot:    Threshold for water content (mm)
+        
+    Output:
+        wetness: Array of wetness scores (=1 if wet) for each time
+        LE_r:    Latent heat flux denisty (Wm^-2)
+    '''
+    
+    
+    
  
