@@ -3,20 +3,22 @@ The python code for the dissertation titled "Simulation of Leaf Surface Wetness 
 To run, the user will need to download all files to the same folder, including the netCDF files containing ERA5 reanalysis data
 
 Scripts:
+
 RH_90_neat:
   Relative Humidity threshold model 
-      '''
-    Model predicts leaf wetness duration (LWD) based upon the assumption the
-    leaf surface is wet for RH > cutoff (%) and dry for RH < cutoff (%).
-    Inputs: 
-        RH:         Time series of RH values 
-        time:       Time series for which RH was measured
-        RH_cutoff:  The threshold for cutoff
-    Outputs:
-        wetness: Defined as '1' if the RH >= threshold (wet) and '0' if the RH 
-        < threshold (dry)
-    '''
-%################    
+  '''
+  Model predicts leaf wetness duration (LWD) based upon the assumption the
+  leaf surface is wet for RH > cutoff (%) and dry for RH < cutoff (%).
+  Inputs: 
+      RH:         Time series of RH values 
+      time:       Time series for which RH was measured
+      RH_cutoff:  The threshold for cutoff
+  Outputs:
+      wetness: Defined as '1' if the RH >= threshold (wet) and '0' if the RH 
+      < threshold (dry)
+  '''
+     
+
 CRC_threshold_neat:
   Skin reservoir content threshold model
   '''
@@ -32,7 +34,7 @@ CRC_threshold_neat:
                    if wet. Wetness[i] = 0 if time step gives lower value than
                    threshold and is dry.
     '''
-%################   
+  
 CART_neat:
   Classification and regression tree model
   '''
@@ -66,7 +68,8 @@ CART_neat:
         e_s: Saturated vapour pressure if given input is T (kPa)
         e:   Vapour pressure if given input is T_d (kPa)
     '''
-%################     
+
+
 RES_neat:
   Aerodynamic resistance model
   '''
