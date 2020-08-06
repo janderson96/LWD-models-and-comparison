@@ -4,7 +4,7 @@ To run, the user will need to download all files to the same folder, including t
 
 Scripts:
 
-'''
+    '''
     Model predicts leaf wetness duration (LWD) based upon the assumption the
     leaf surface is wet for RH > cutoff (%) and dry for RH < cutoff (%).
     Inputs: 
@@ -15,4 +15,5 @@ Scripts:
         wetness: Defined as '1' if the RH >= threshold (wet) and '0' if the RH 
         < threshold (dry)
     '''
+    
  
