@@ -4,7 +4,7 @@ To run, the user will need to download all files to the same folder, including t
 
 Scripts:
 
-RH_90_neat.py
+RH_90.py
 
 RH_90
 
@@ -20,7 +20,7 @@ RH_90
         < threshold (dry)
     '''
     
-CRC_threshold_neat.py
+CRC_threshold.py
 
 CRC_threshold
 
@@ -38,7 +38,7 @@ CRC_threshold
                    threshold and is dry.
     '''
     
-CART_neat.py
+CART.py
 
 CART
 
@@ -76,7 +76,7 @@ vapour_pressure
         e:   Vapour pressure if given input is T_d (kPa)
     '''
     
-RES_neat.py
+RES.py
 
 RES
 
@@ -98,6 +98,8 @@ RES
         wetness: Array of wetness scores (=1 if wet) for each time
         LE_r:    Latent heat flux denisty (Wm^-2)
     '''
+    
+Other files titled 'RES_OREGON', RH_OREGON' etc. are the comparison scripts between model and recorded LWD. See top of script for notes on how to run for different sites
     
     
     
